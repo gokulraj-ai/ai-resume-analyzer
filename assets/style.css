@@ -1,0 +1,163 @@
+/* ── Global resets & fonts ─────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ── App header ────────────────────────────────────────────────────────────── */
+.app-header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 1.5rem;
+}
+.app-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.tagline {
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+/* ── Sidebar extras ────────────────────────────────────────────────────────── */
+.topic-badge {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #378ADD;
+    margin-bottom: 4px;
+}
+.topic-desc {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 0;
+}
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+}
+.tag {
+    background: rgba(55, 138, 221, 0.12);
+    color: #378ADD;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 0.5px solid rgba(55,138,221,0.3);
+}
+
+/* ── Question card ─────────────────────────────────────────────────────────── */
+.question-card {
+    background: rgba(55, 138, 221, 0.07);
+    border: 1px solid rgba(55, 138, 221, 0.25);
+    border-left: 4px solid #378ADD;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+}
+.question-meta {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-bottom: 0.75rem;
+}
+.question-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── Score cards ───────────────────────────────────────────────────────────── */
+.score-card {
+    text-align: center;
+    border: 2px solid #378ADD;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.score-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.score-number span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9ca3af;
+}
+.score-verdict {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.score-label {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ── Feedback boxes ────────────────────────────────────────────────────────── */
+.feedback-box {
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    min-height: 140px;
+    margin-bottom: 1rem;
+}
+.strengths-box {
+    background: rgba(29, 158, 117, 0.08);
+    border: 1px solid rgba(29, 158, 117, 0.25);
+}
+.improvements-box {
+    background: rgba(226, 75, 74, 0.07);
+    border: 1px solid rgba(226, 75, 74, 0.2);
+}
+.feedback-box h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* ── Ideal answer block ────────────────────────────────────────────────────── */
+.ideal-answer {
+    background: rgba(83, 74, 183, 0.08);
+    border-left: 3px solid #534AB7;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ── Landing cards ─────────────────────────────────────────────────────────── */
+.landing-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    height: 100%;
+}
+.landing-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+.landing-card h4 {
+    margin-bottom: 0.5rem;
+}
+.landing-card p {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin: 0;
+}
+
+/* ── Streamlit overrides ───────────────────────────────────────────────────── */
+.stButton > button[kind="primary"] {
+    border-radius: 8px;
+    font-weight: 600;
+}
+div[data-testid="stExpander"] {
+    border-radius: 8px;
+}
